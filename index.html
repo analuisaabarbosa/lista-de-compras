@@ -1,67 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-      <!-- define o conjunto de caracteres da página como UTF-8 -->
     <meta charset="UTF-8" />
-    <!-- garante que a página seja responsiva em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- define o título da página -->
     <title>Assistente de Compras</title>
-    <!-- inclui o link para a biblioteca de ícones font awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- inclui o arquivo de estilos css externo -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-      <!-- seção principal que centraliza o conteúdo -->
     <section class="section-center">
-      <!-- formulário principal da lista de compras -->
-        <form class="grocery-form">
-            <!-- elemento de alerta -->
-            <p class="alert">
-                <!-- título da lista de compras -->
-                <h3>Lista de Compras</h3>
-                <!-- container para os controles do formulário -->
-                <div class="form-control">
-                    <!-- campo de entrada de texto para adicionar itens -->
-                    <input type="text" id="grocery" placeholder="ex: ovos">
-                    <!-- botão para enviar o formulário -->
-                    <button type="submit" class="submit-btn">
-                        submit
-                    </button>
-                </div>
-            </p>
-        </form>
-        <!-- container que contém os itens da lista e o botão "clear" -->
-        <div class="grocery-container">
-            <!-- lista de itens -->
-            <div class="grocery-list">
-            <!-- código comentado que define a estrutura de um item -->
-            <!--  <article class="grocery-item">
-                    <p class="title">item</p>
-                     exibe o nome do item
-                    <div class="btn-container">
-                        container para botões de edição e exclusão
-                        <button type="button" class="edit-btn">
-                            <i class="fas fa-edit"></i>        
-                            botão de editar com ícone 
-                        </button>
-                        <button type="button" class="delete-btn">
-                            <i class="fas fa-trash"></i>        
-                           botão de excluir com ícone 
-                        </button>
-                    </div>
-                </article> -->
-            </div>
-            <!-- botão para limpar toda a lista -->
-            <button type="button" class="clear-btn">clear</button>
+      <form class="grocery-form">
+        <p class="alert">
+          <h3>Lista de Compras</h3>
+          <div class="form-control">
+            <input type="text" id="grocery" placeholder="ex: ovos">
+            <button type="submit" class="submit-btn">
+              submit
+            </button>
+          </div>
+        </p>
+      </form>
+      <div class="grocery-container">
+        <div class="grocery-list">
         </div>
+        <button type="button" class="clear-btn">clear</button>
+      </div>
     </section>
     <script src="./js/app.js"></script>
-    <!-- inclui o arquivo de script externo -->
   </body>
 </html>

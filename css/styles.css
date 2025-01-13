@@ -1,7 +1,5 @@
-/* importa as fontes open sans e roboto do google fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-/* remove margens e preenchimentos padrão e define box-sizing para border-box para todos os elementos */
 *,
 ::after,
 ::before {
@@ -10,7 +8,6 @@
   box-sizing: border-box;
 }
 
-/* define o estilo geral do corpo da página com fonte, cores e espaçamento */
 body {
   font-family: "Open Sans", sans-serif;
   background: hsl(210, 36%, 96%);
@@ -19,27 +16,22 @@ body {
   font-size: 0.875rem;
 }
 
-/* remove os marcadores das listas não ordenadas */
 ul {
   list-style-type: none;
 }
 
-/* remove sublinhados de links */
 a {
   text-decoration: none;
 }
 
-/* define a largura das imagens (exceto as com classe .logo) como 100% */
 img:not(.logo) {
   width: 100%;
 }
 
-/* garante que as imagens sejam exibidas como blocos */
 img {
   display: block;
 }
 
-/* estiliza cabeçalhos com espaçamento entre letras, transformação de texto e margens */
 h1,
 h2,
 h3,
@@ -51,7 +43,6 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
-/* define tamanhos específicos para os cabeçalhos */
 h1 {
   font-size: 3rem;
 }
@@ -65,13 +56,11 @@ h4 {
   font-size: 0.875rem;
 }
 
-/* define estilo e margem para parágrafos */
 p {
   margin-bottom: 1.25rem;
   color: hsl(210, 22%, 49%);
 }
 
-/* ajusta tamanhos e espaçamento em telas maiores que 800px */
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -96,7 +85,6 @@ p {
   }
 }
 
-/* define estilos para botões, incluindo bordas, sombras e efeitos de transição */
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -112,18 +100,15 @@ p {
   border-radius: 0.5rem;
 }
 
-/* altera cor de fundo e texto no estado hover dos botões */
 .btn:hover {
   color: #fff;
   background: #222;
 }
 
-/* define espaçamento vertical para seções */
 .section {
   padding: 5rem 0;
 }
 
-/* centraliza e limita a largura da seção principal */
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -131,21 +116,18 @@ p {
   margin-top: 8rem;
 }
 
-/* ajusta a largura da seção em telas maiores que 992px */
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
   }
 }
 
-/* centraliza o conteúdo principal vertical e horizontalmente */
 main {
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
 
-/* adiciona fundo, bordas arredondadas e sombra na seção principal */
 .section-center {
   background: #fff;
   border-radius: 0.5rem;
@@ -154,12 +136,10 @@ main {
   padding: 2rem;
 }
 
-/* aumenta a intensidade da sombra no hover da seção principal */
 .section-center:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* estiliza alertas com espaçamento e alinhamento centralizado */
 .alert {
   margin-bottom: 1rem;
   height: 1.25rem;
@@ -171,32 +151,27 @@ main {
   letter-spacing: 0.25rem;
 }
 
-/* estilo para alertas de erro */
 .alert-danger {
   color: #721c24;
   background: #f8d7da;
 }
 
-/* estilo para alertas de sucesso */
 .alert-success {
   color: #155724;
   background: #d4edda;
 }
 
-/* estilo para o cabeçalho dentro do formulário, com cor específica e alinhamento centralizado */
 .grocery-form h3 {
   color: hsl(205, 86%, 17%);
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-/* define um contêiner flexível e centralizado para os elementos do formulário */
 .form-control {
   display: flex;
   justify-content: center;
 }
 
-/* estilo para o input de texto do formulário */
 #grocery {
   padding: 0.25rem;
   padding-left: 1rem;
@@ -209,13 +184,11 @@ main {
   color: hsl(210, 22%, 49%);
 }
 
-/* estilo para o texto placeholder no input de texto */
 #grocery::placeholder {
   font-family: "Open Sans", sans-serif;
   color: hsl(210, 22%, 49%);
 }
 
-/* estilo padrão para o botão de envio no formulário */
 .submit-btn {
   background: hsl(205, 86%, 81%);
   border-color: transparent;
@@ -233,25 +206,21 @@ main {
   font-size: 0.85rem;
 }
 
-/* mudança de estilo para o botão de envio ao passar o mouse */
 .submit-btn:hover {
   background: #49a6e9;
   color: #fff;
 }
 
-/* contêiner para a lista de itens, inicialmente invisível */
 .grocery-container {
   margin-top: 2rem;
   transition: all 0.3s linear;
   visibility: hidden;
 }
 
-/* torna o contêiner visível */
 .show-container {
   visibility: visible;
 }
 
-/* estilo para os itens individuais da lista */
 .grocery-item {
   display: flex;
   align-items: center;
@@ -263,18 +232,15 @@ main {
   text-transform: capitalize;
 }
 
-/* estilo dos itens da lista ao passar o mouse */
 .grocery-item:hover {
   color: hsl(210, 22%, 49%);
   background: hsl(210, 36%, 96%);
 }
 
-/* alteração na cor do título do item ao passar o mouse */
 .grocery-item:hover .title {
   color: hsl(210, 22%, 49%);
 }
 
-/* estilo do título de cada item */
 .title {
   margin-bottom: 0;
   color: hsl(209, 61%, 16%);
@@ -282,7 +248,6 @@ main {
   transition: all 0.3s linear;
 }
 
-/* estilo padrão para botões de edição e exclusão */
 .edit-btn,
 .delete-btn {
   background: transparent;
@@ -293,27 +258,22 @@ main {
   transition: all 0.3s linear;
 }
 
-/* estilo do botão de edição */
 .edit-btn {
   color: hsl(125, 71%, 66%);
 }
 
-/* alteração no estilo do botão de edição ao passar o mouse */
 .edit-btn:hover {
   color: hsl(125, 67%, 44%);
 }
 
-/* estilo do botão de exclusão */
 .delete-btn {
   color: hsl(360, 71%, 66%);
 }
 
-/* alteração no estilo do botão de exclusão ao passar o mouse */
 .delete-btn:hover {
   color: hsl(360, 67%, 44%);
 }
 
-/* estilo para o botão de limpar a lista */
 .clear-btn {
   text-transform: capitalize;
   width: 10rem;
@@ -331,7 +291,6 @@ main {
   margin-top: 1.25rem;
 }
 
-/* mudança de estilo para o botão de limpar ao passar o mouse */
 .clear-btn:hover {
   color: hsl(360, 67%, 44%);
 }
